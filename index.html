@@ -6,7 +6,7 @@
 	<title>OSYS | Home</title>
 	   <!-- STYLE SHEETS -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
 
 	 <!-- FONTS -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,48 +21,152 @@
 
 <!-- This is where all the body content begins -->
 <body>
-	<header class="margin-default">
-		<nav id="top-nav" class="padding-40 flex-row-center hidden-mobile">
-            <div class="OSYS"> <a><p>OSYS</p></a></div>
+	<header>
+		<nav class="nav-container" class="hidden-mobile">
+			<div class="nav-flex">
+            <div>
+            	<OSYS>OSYS</OSYS>
+            </div>
+            <div id="nav-content">
             <ul>
-                <li class="all-caps"><a href="#">Get Help</a></li>
-                <li class="all-caps"><a href="#">About</a></li>
-                <li class="all-caps"><a href="#">Get Involved</a></li>
-                <li class="all-caps"><a href="#">Donate</a></li>
+                <li class="nav-content"><a href="#">Get Help</a></li>
+                <li class="nav-content"><a href="#">About</a></li>
+                <li class="nav-content"><a href="#">Get Involved</a></li>
+                <li class="nav-content"><a href="#">Donate</a></li>
             </ul>
+            </div>
             </div>
         </nav>
 	</header>
 
 <!-- Desktop Hero Section -->
-	<section>
+	<section class="hero" >
 		<div>
+			<div class="hero-flex">
+			<div class="hero-text">
 			<h1>Old Strathcona Youth Society</h1>
-			<h4>Providing street-level information, resources, referrals, and support to youth in the Whyte Ave area since 1998.</h4>
-			<button class="btn-orange-long"><a>Start your build</a></button>
-		<div class="img-hero"> 
-			<img src="images/cody-silver-FqxenTBvmdk-unsplash.jpg">
-
+			<h4 class="white-text">Providing street-level information, resources, referrals, and support to youth in the Whyte Ave area since 1998.</h4>
+			<button class="btn-orange-long"><a>See our Services</a></button>
 		</div>
+		<div class="hero-image"> 
+			<img src="images/homehero.jpg">
+		</div>
+	</div>
+</div>
 	</section>
 
 <!-- Desktop Hours of Operation -->
-	<section>
+	<section class="hours-container">
+		<div class="hours-flex">
 		<div>
-			<img src="images/ben-duchac-96DW4Pow3qI-unsplash.jpg">
+			<img src="images/hours.jpg">
 		</div>
-			<div>
+			<div class="hours-text">
+			<div class="office-hours">
 				<h2>Hours of operation</h2>
-				<h3>Office Hours Mon – Fri:  10:30 am- 6:00 Community Outreach Hours Wed, Fri & Sat: 12:00 pm - 5:00 pm Closed on Sunday</h3>
+				<h4>Office Hours <br> Mon – Fri:  10:30 am- 6:00</h4> 
+				<h4> Community Outreach Hours <br> Wed, Fri & Sat: 12:00 pm - 5:00 pm </h4>
+				<h4>Closed on Sunday</h4>
+			</div>
+			<div class="office-hours">
 				<h2>Appointments</h2>
-				<h3>Appointments are available from Tues – Thurs: 10:30 am-6:00 pm Please call the number below to make an appointment for housing, ID replacement, groceries, or bus passes! Call us at: 780-496-5947</h3>
+				<h4>Appointments are available from <br> Tues – Thurs: 10:30 am-6:00 pm </h4> 
+				<h4>Please call the number below to make an appointment for housing, ID replacement, groceries, or bus passes!</h4>
+				<h4> Call us at: 780-496-5947</h4>
+			</div>
+			</div>
 			</div>
 	</section>
 
 <!-- New Location -->
-	<section>
-		
+	<section class="location-container">
+		<div>
+			<img src="images/hammer.jpg">
+		</div>
+			<div>
+			<div class="location-text">
+				<h2 class="white-text">New Location</h2>
+				<h4 class="white-text">OSYS has a new home. More details and grand opening date coming soon.</h4>
+				<h4 class="white-text">To show support and make a donation, <br> please click button below.</h4>
+			</div>
+			<div class="button-flex">
+			<button class="btn-transparent">Donate</button>
+		</div>
+	</div>
 	</section>
 
+<!-- Upcoming Events -->
+	<section class="event-container">
+		<div>
+			<h2> Upcoming Events </h2>
+		</div>
+			<div class="event-flex">
+				<div class="event-box">
+					<img src="images/berry.jpg">
+					<h3> Berry Picking </h3>
+					<body-small> April 15, 2024 </body-small>
+					<body-small> Information about the event </body-small>
+
+				</div>
+					<div class="event-box">
+						<img src="images/jurassic.jpg">
+						<h3> Jurassic Forest </h3>
+						<body-small> April 15, 2024 </body-small>
+						<body-small> Information about the event </body-small>
+
+					</div>
+			<div class="event-box">
+				<img src="images/pie.jpg">
+				<h3> Easy as Pie Fundraiser </h3>
+				<body-small> April 15, 2024 </body-small>
+				<body-small> Information about the event </body-small>
+
+			</div>
+			<div class="btn-see-more-events">
+				<h3 class="white-text underline"> See More Events </h3>
+			</div>
+		</div>
+	</section>
+
+<!-- Get Involved -->
+<section class="get-container">
+	<div class="get-flex">
+		<h2 class="text-center"> Get Involved </h2>
+		<h4 class="text-center"> OSYS is always looking for volunteers. Sign up now and help us run drop-in and recreational activities or develop and manage fundraisers and special events. </h4>
+	<button class="btn-transparent">Volunteer</button>
+		</div>
+</section>
+
+<!-- Footer -->
+
+<section>
+	<div class="footer-container">
+		<div class="footer-flex">
+			<div class="OSYS-footer">
+			<OSYS> OSYS </OSYS>
+				<div class="link-flex">
+					<footer-links> Get Help <br> <br> About </footer-links>
+					<footer-links> Get Involved  <br> <br> Donate</footer-links>
+				</div>
+			</div>
+		<div class="footer-office">
+			<div>
+				<h4>Office Hours <br> Mon – Fri:  10:30 am- 6:00</h4> 
+				<h4> Community Outreach Hours <br> Wed, Fri & Sat: 12:00 pm - 5:00 pm </h4>
+				<h4> Call us at: 780-496-5947</h4>
+			</div>
+			<div class="icons-flex">
+				<img src="images/ig.svg">
+				<img src="images/youtube.svg">
+			</div>
+		</div>
+	</div>
+<div class="line-land">
+<div class="line"> </div>
+	<div> <land-acknowledgement> OSYS acknowledge that our agency is on Treaty Six Territory | Amiskwaciwâskahikan </land-acknowledgement> 
+</div>
+</div>
+</div>
+</section>
 </body>
 </html>

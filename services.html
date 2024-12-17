@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>OSYS | Home</title>
+	<title>OSYS | Services</title>
 	   <!-- STYLE SHEETS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -19,15 +19,15 @@
 
 </head>
 
-<!-- This is where all the body content begins -->
+<!-- Nav Desktop -->
 <body>
-	<header>
-		<nav class="nav-container" class="hidden-mobile">
+	<header class="margin-default">
+		<nav class="nav-container flex-row-center hidden-mobile">
 			<div class="nav-flex">
             <div>
             	<OSYS>OSYS</OSYS>
             </div>
-            <div id=nav-content>
+            <div id="nav-content">
             <ul>
                 <li class="nav-content"><a href="#">Get Help</a></li>
                 <li class="nav-content"><a href="#">About</a></li>
@@ -37,10 +37,27 @@
             </div>
             </div>
         </nav>
+<!-- Nav Mobile -->
+	<nav class="nav-container flex-row-center hidden-desktop">
+			<div class="nav-flex">
+            <div>
+            	<OSYS>OSYS</OSYS>
+            </div>
+				<div class="nav_hamburger"><!-- HAMBURGER -->
+               <svg width="48" height="23" viewBox="0 0 48 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="2" transform="translate(0 0.634029)" fill="black"/>
+                <rect width="48" height="2" transform="translate(0 10.634)" fill="black"/>
+                <rect width="48" height="2" transform="translate(0 20.634)" fill="black"/>
+                </svg>
+                </svg>
+            </div>
+            </div>
+            </div>
+        </nav>
 	</header>
 
-<!-- SERVICES HERO -->
-<section class="service-container">
+<!-- DESKTOP SERVICES HERO -->
+<section class="service-container hidden-mobile">
 	<div class="service-flex">
 		<div class="service-text">
 			<h1> Our Services </h1>
@@ -53,13 +70,33 @@
 			Book an appointment: 780-496-5947 </p>
 		</div>
 		<div>
-			<img src="images/hands.jpg">
+			<img src="images/hands.jpg" alt="image of hands reaching out to each other">
 		</div>
 	</div>
 </section>
 
-<!-- SERVICES LIST -->
-<section class="service-list-container">
+<!-- MOBILE SERVICES HERO -->
+<section class="service-container-mobile hidden-desktop">
+	<div class="service-flex-mobile">
+			<h1-mobile> Our Services </h1-mobile>
+			<p class="white-text"> OSYS provides a vast number of services to Edmonton's at-risk youth. The services include essential services such as access to transport and housing while also providing emotional and mental health support. 
+			<br>
+			<br>
+			To access our services, visit the OSYS location during the available hours or book an appointment by calling the OSYS number.
+			<br>
+			<br>
+			Book an appointment: <strong> 780-496-5947 </strong></p>
+	</div>
+</section>
+
+<section class="hidden-desktop">
+	<div class="img-crop">
+		<img src="images/hands.jpg" alt="image of hands reaching out to each other" class="hero-img-mobile">
+	</div>
+</section>
+
+<!-- DESKTOP SERVICES LIST -->
+<section class="service-list-container hidden-mobile">
 	<div class="service-buttons-flex">
 		<button class="btn-round-orange"><a>Show all</a></button>
 		<button class="btn-round-grey"><a> Essential Support Services </a></button>
@@ -75,57 +112,57 @@
 			<div class="grey-box">
 			<Footer-links> ID Replacement </Footer-links>
 			<p> Having an ID can be an essential step to stability. OSYS can <br> take youth to the registry and pay for simple ID replacements,<br> replace AB Health Care Cards, and assist in birth certificate <br> replacements<br>
-			<br>
-			Available Hours <br>
+			<br><strong>
+			Available Hours </strong><br>
 			Mon-Fri: 10:30 am- 6:00 pm <br>
-			<br>
-			Book an appointment: <br>
+			<br><strong>
+			Book an appointment: </strong><br>
 			Call: 780-496-5947 <br>
-			<br>
-			Located at <br>
-			10325 83 Ave NW, Edmonton, AB T6E 2C6 </p>
+			<br><strong>
+			Located at </strong> <br>
+			10325 83 Ave NW, Edmonton, AB T6E 2C6 </strong> </p>
 		</div>
 
 		<div class="grey-box">
 			<Footer-links> Income Support </Footer-links>
 			<p> Filling out forms and gathering the necessary information to <br> apply for AB Works or AISH is hard. Our staff are familiar with <br> the process and ready to support people in navigating that <br> process.<br>
-			<br>
-			Available Hours <br>
+			<br><strong>
+			Available Hours </strong><br>
 			Mon-Fri: 10:30 am- 6:00 pm <br>
-			<br>
-			Book an appointment: <br>
+			<br><strong>
+			Book an appointment: </strong><br>
 			Call: 780-496-5947 <br>
-			<br>
-			Located at <br>
-			10325 83 Ave NW, Edmonton, AB T6E 2C6 </p>
+			<br><strong>
+			Located at </strong> <br>
+			10325 83 Ave NW, Edmonton, AB T6E 2C6 </strong></p>
 		</div>
 		</div>
 		<div class="grey-box-row">
 		<div class="grey-box">
 		<Footer-links> Housing Info </Footer-links>
 			<p> While we are not housing workers, we understand housing is a <br> top priority for people who are unhoused or those living in <br> precarious situations. We can do housing intakes, and referrals,<br> and help people navigate the private housing market.<br>
-			<br>
-			Available Hours <br>
+			<br><strong>
+			Available Hours </strong><br>
 			Mon-Fri: 10:30 am- 6:00 pm <br>
-			<br>
-			Book an appointment: <br>
+			<br><strong>
+			Book an appointment: </strong><br>
 			Call: 780-496-5947 <br>
-			<br>
-			Located at <br>
-			10325 83 Ave NW, Edmonton, AB T6E 2C6 </p>
+			<br><strong>
+			Located at </strong> <br>
+			10325 83 Ave NW, Edmonton, AB T6E 2C6 </strong></p>
 		</div>
 		<div class="grey-box">
 		<Footer-links> Arc Cards </Footer-links>
 			<p>In partnership with the P.A.T.H. Program, we offer free ARC <br> Cards and bus tickets to those experiencing homelessness or <br>precarious housing. Please note, those on our ARC Card list <br>must check in with us every month before the 24th to get their <br> card reloaded!<br>
-			<br>
-			Available Hours <br>
+			<br><strong>
+			Available Hours </strong><br>
 			Mon-Fri: 10:30 am- 6:00 pm <br>
-			<br>
-			Book an appointment: <br>
+			<br><strong>
+			Book an appointment: </strong><br>
 			Call: 780-496-5947 <br>
-			<br>
-			Located at <br>
-			10325 83 Ave NW, Edmonton, AB T6E 2C6 </p>
+			<br><strong>
+			Located at </strong> <br>
+			10325 83 Ave NW, Edmonton, AB T6E 2C6 </strong></p>
 		</div>
 		</div>
 		<h2> Basic Needs </h2>
@@ -133,28 +170,28 @@
 		<div class="grey-box">
 		<Footer-links> Basic Needs </Footer-links>
 			<p> Law students from the University of Alberta stop by on a <br> weekly basis to answer questions and provide legal resources! <br> Their sessions are a great opportunity to ask questions and get <br> information on how to deal with any existing legal troubles.<br>
-			<br>
-			Available Hours: <br>
+			<br><strong>
+			Available Hours </strong><br>
 			Mon-Fri: 10:30 am- 6:00 pm <br>
-			<br>
-			Book an appointment: <br>
+			<br><strong>
+			Book an appointment: </strong><br>
 			Call: 780-496-5947 <br>
-			<br>
-			Located at: <br>
-			10325 83 Ave NW, Edmonton, AB T6E 2C6 </p>
+			<br><strong>
+			Located at </strong> <br>
+			10325 83 Ave NW, Edmonton, AB T6E 2C6 </strong></p>
 		</div>
 		<div class="grey-box">
 		<Footer-links> Groceries </Footer-links>
 			<p>Support from the Edmonton Food Bank gives us the <br> opportunity to provide clients with one grocery bag/hamper <br> per month.<br>
-			<br>
-			Available Hours <br>
+			<br><strong>
+			Available Hours </strong><br>
 			Mon-Fri: 10:30 am- 6:00 pm <br>
-			<br>
-			Book an appointment: <br>
+			<br><strong>
+			Book an appointment: </strong><br>
 			Call: 780-496-5947 <br>
-			<br>
-			Located at <br>
-			10325 83 Ave NW, Edmonton, AB T6E 2C6 </p>
+			<br><strong>
+			Located at </strong> <br>
+			10325 83 Ave NW, Edmonton, AB T6E 2C6 </strong> </p>
 		</div>
 		</div>
 		<h2> Emotional and Mental Health Support </h2>
@@ -162,28 +199,28 @@
 		<div class="grey-box">
 		<Footer-links> Harm Reduction</Footer-links>
 			<p>Through our partnership with Street Works, our staff offers <br> harm reduction education and resources. We believe in meeting <br> people where they're at, and we do so in a nonjudgmental and <br> trauma-informed way.<br>
-			<br>
-			Available Hours: <br>
+			<br><strong>
+			Available Hours </strong><br>
 			Mon-Fri: 10:30 am- 6:00 pm <br>
-			<br>
-			Book an appointment: <br>
+			<br><strong>
+			Book an appointment: </strong><br>
 			Call: 780-496-5947 <br>
-			<br>
-			Located at: <br>
-			10325 83 Ave NW, Edmonton, AB T6E 2C6 </p>
+			<br><strong>
+			Located at </strong> <br>
+			10325 83 Ave NW, Edmonton, AB T6E 2C6 </strong> </p>
 		</div>
 		<div class="grey-box">
 		<Footer-links> Emotional Support</Footer-links>
 			<p>We're here to listen, support, and be consistent for youth. We <br> understand that it can be weird to work with someone if you <br> don't trust them, so we take a helping relationship-based <br> approach to services. We all need a shoulder to cry on.<br>
-			<br>
-			Available Hours <br>
+			<br><strong>
+			Available Hours </strong><br>
 			Mon-Fri: 10:30 am- 6:00 pm <br>
-			<br>
-			Book an appointment: <br>
+			<br><strong>
+			Book an appointment: </strong><br>
 			Call: 780-496-5947 <br>
-			<br>
-			Located at <br>
-			10325 83 Ave NW, Edmonton, AB T6E 2C6 </p>
+			<br><strong>
+			Located at </strong> <br>
+			10325 83 Ave NW, Edmonton, AB T6E 2C6 </strong></p>
 		</div>
 		</div>
 		<h2> Community Engagement </h2>
@@ -191,28 +228,28 @@
 		<div class="grey-box">
 		<Footer-links> Outreach</Footer-links>
 			<p>Staff are often able to meet people offsite, such as supporting <br> people at meetings, housing viewings, or appointments. You <br> don't have to be alone, bring us with you!<br>
-			<br>
-			Available Hours: <br>
+			<br><strong>
+			Available Hours </strong><br>
 			Mon-Fri: 10:30 am- 6:00 pm <br>
-			<br>
-			Book an appointment: <br>
+			<br><strong>
+			Book an appointment: </strong><br>
 			Call: 780-496-5947 <br>
-			<br>
-			Located at: <br>
-			10325 83 Ave NW, Edmonton, AB T6E 2C6 </p>
+			<br><strong>
+			Located at </strong> <br>
+			10325 83 Ave NW, Edmonton, AB T6E 2C6 </strong></p>
 		</div>
 		<div class="grey-box">
 		<Footer-links> Cultural Connection</Footer-links>
 			<p>Over half of the youth we support self-identify as Indigenous,<br> First Nations, Metis, or Inuit. It is essential we acknowledge this <br> in our programming and intentionally connect youth with <br> appropriate cultural resources.<br>
-			<br>
-			Available Hours <br>
+			<br><strong>
+			Available Hours </strong><br>
 			Mon-Fri: 10:30 am- 6:00 pm <br>
-			<br>
-			Book an appointment: <br>
+			<br><strong>
+			Book an appointment: </strong><br>
 			Call: 780-496-5947 <br>
-			<br>
-			Located at <br>
-			10325 83 Ave NW, Edmonton, AB T6E 2C6 </p>
+			<br><strong>
+			Located at </strong> <br>
+			10325 83 Ave NW, Edmonton, AB T6E 2C6 </strong> </p>
 		</div>
 		</div>
 		<h2> Recreation and Creative Expression </h2>
@@ -221,14 +258,15 @@
 		<Footer-links> Art and Creation</Footer-links>
 			<p>Art supplies and inspiration abound at the OSYS, and staff have <br> many different specialties and are always willing to share their <br> passions. We have a ton of recreation events, either in-house <br> or on outings, such as to Fort Edmonton, Edmonton Rec <br> Centres, local festivals, Laser Tag, and much more.<br>
 			<br>
-			Available Hours: <br>
+			<strong>
+			Available Hours </strong><br>
 			Mon-Fri: 10:30 am- 6:00 pm <br>
-			<br>
-			Book an appointment: <br>
+			<br><strong>
+			Book an appointment: </strong><br>
 			Call: 780-496-5947 <br>
-			<br>
-			Located at: <br>
-			10325 83 Ave NW, Edmonton, AB T6E 2C6 </p>
+			<br><strong>
+			Located at </strong> <br>
+			10325 83 Ave NW, Edmonton, AB T6E 2C6 </strong></p>
 		</div>
 		</div>
 		<h2> Legal Services </h2>
@@ -236,31 +274,134 @@
 		<div class="grey-box">
 		<Footer-links> Student Legal Servives</Footer-links>
 			<p>Law students from the University of Alberta stop by on a <br> weekly basis to answer questions and provide legal resources! <br> Their sessions are a great opportunity to ask questions and get information on how to deal with any existing legal troubles.<br>
-			<br>
-			Available Hours: <br>
+			<br><strong>
+			Available Hours </strong><br>
 			Mon-Fri: 10:30 am- 6:00 pm <br>
-			<br>
-			Book an appointment: <br>
+			<br><strong>
+			Book an appointment: </strong><br>
 			Call: 780-496-5947 <br>
-			<br>
-			Located at: <br>
-			10325 83 Ave NW, Edmonton, AB T6E 2C6 </p>
+			<br><strong>
+			Located at </strong> <br>
+			10325 83 Ave NW, Edmonton, AB T6E 2C6 </strong> </p>
 		</div>
 		</div>
 	</div>
 
 </section>
 
+<!-- MOBILE SERVICES LIST -->
+<section class="service-list-container-mobile hidden-desktop">
+	<div class="all-service-groups">
+	<div class="service-group">
+		<h2-mobile> Essential Support Servives </h2-mobile> 
 
+		<div class="grey-box-open">
+			<div class="heading-arrow">
+				<Footer-links-mobile> ID Replacement </Footer-links-mobile>
+				<img src="images/arrow-up.png">
+			</div>
+				<p> Having an ID can be an essential step to stability. OSYS can take youth to the registry and pay for simple ID replacements, replace AB Health Care Cards, and assist in birth certificate <br> replacements<br>
+				<br><strong>
+				Available Hours </strong><br>
+				Mon-Fri: 10:30 am- 6:00 pm <br>
+				<br><strong>
+				Book an appointment: </strong><br>
+				Call: 780-496-5947 <br>
+				<br><strong>
+				Located at </strong> <br>
+				10325 83 Ave NW, Edmonton, AB T6E 2C6 </strong></p>
+			</div>
+			<div class="grey-box-closed">
+				<div class="heading-arrow">
+					<Footer-links-mobile> Income Support Application </Footer-links-mobile>
+					<img src="images/arrow-down.png">
+				</div>
+			</div>
 
-<!-- SERVICE LIST -->
-<section>
-	
+			<div class="grey-box-closed">
+				<div class="heading-arrow">
+					<Footer-links-mobile> Housing Info </Footer-links-mobile>
+					<img src="images/arrow-down.png">
+				</div>
+			</div>
+
+			<div class="grey-box-closed">
+				<div class="heading-arrow">
+					<Footer-links-mobile> Arc Cards </Footer-links-mobile>
+					<img src="images/arrow-down.png">
+				</div>
+			</div>
+	</div>
+	<div class="service-group">
+		<h2-mobile> Basic Needs </h2-mobile>
+			<div class="grey-box-closed">
+				<div class="heading-arrow">
+					<Footer-links-mobile> Basic Needs </Footer-links-mobile>
+					<img src="images/arrow-down.png">
+				</div>
+			</div>
+			<div class="grey-box-closed">
+				<div class="heading-arrow">
+					<Footer-links-mobile> Groceries </Footer-links-mobile>
+					<img src="images/arrow-down.png">
+				</div>
+			</div>
+	</div>
+	<div class="service-group">
+		<h2-mobile> Emotional and Mental Health Support </h2-mobile>
+			<div class="grey-box-closed">
+				<div class="heading-arrow">
+					<Footer-links-mobile> Harm Reduction </Footer-links-mobile>
+					<img src="images/arrow-down.png">
+				</div>
+			</div>
+			<div class="grey-box-closed">
+				<div class="heading-arrow">
+					<Footer-links-mobile> Emotional Support </Footer-links-mobile>
+					<img src="images/arrow-down.png">
+				</div>
+			</div>
+	</div>
+	<div class="service-group">
+		<h2-mobile>Community Engagement </h2-mobile>
+			<div class="grey-box-closed">
+				<div class="heading-arrow">
+					<Footer-links-mobile> Outreach </Footer-links-mobile>
+					<img src="images/arrow-down.png">
+				</div>
+			</div>
+			<div class="grey-box-closed">
+				<div class="heading-arrow">
+					<Footer-links-mobile> Cultural Connection </Footer-links-mobile>
+					<img src="images/arrow-down.png">
+				</div>
+			</div>
+	</div>
+	<div class="service-group">
+		<h2-mobile> Recreation and Creative Expression </h2-mobile>
+			<div class="grey-box-closed">
+				<div class="heading-arrow">
+					<Footer-links-mobile> Art and Creation </Footer-links-mobile>
+					<img src="images/arrow-down.png">
+				</div>
+			</div>
+	</div>
+	<div class="service-group">
+		<h2-mobile> Legal Service </h2-mobile>
+			<div class="grey-box-closed">
+				<div class="heading-arrow">
+					<Footer-links-mobile> Student Legal Services</Footer-links-mobile>
+					<img src="images/arrow-down.png">
+				</div>
+			</div>
+	</div>
+</div>
 </section>
 
-<!-- Footer -->
 
-<section>
+<!-- Desktop Footer -->
+
+<section class="hidden-mobile">
 	<div class="footer-container">
 		<div class="footer-flex">
 			<div class="OSYS-footer">
@@ -287,6 +428,41 @@
 	<div> <land-acknowledgement> OSYS acknowledge that our agency is on Treaty Six Territory | Amiskwaciwâskahikan </land-acknowledgement> 
 </div>
 </div>
+</div>
+</section>
+
+<!-- Mobile Footer -->
+
+<section class="hidden-desktop">
+	<div class="footer-container-mobile">
+		<div class="logo-content-mobile">
+		<div>
+			
+		</div>
+			<div class="footer-flex-mobile">
+				<OSYS> OSYS </OSYS>
+				<div class="link-flex-mobile">
+					<footer-links-mobile> Get Help <br> <br> About </footer-links-mobile>
+					<footer-links-mobile> Get Involved  <br> <br> Donate</footer-links-mobile>
+				</div>
+				<div 
+					class="line-mobile"> 
+				</div>
+				<div>
+					<h4><strong>Office Hours</strong><br> Mon – Fri:  10:30 am- 6:00 <br><br><strong>Community Outreach Hours </strong><br> Wed, Fri & Sat: 12:00 pm - 5:00 pm<br><br><strong> Call us at: </strong>780-496-5947</h4>
+				</div>
+				<div class="icons-flex">
+					<img src="images/ig.svg">
+					<img src="images/youtube.svg">
+				</div>
+				<div 
+					class="line-mobile"> 
+				</div>
+				<div>
+					<land-acknowledgement-mobile> OSYS acknowledge that our agency is on Treaty Six Territory | Amiskwaciwâskahikan </land-acknowledgement-mobile>
+				</div>
+				
+	</div>
 </div>
 </section>
 

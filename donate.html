@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>OSYS | Home</title>
+	<title>OSYS | Donate</title>
 	   <!-- STYLE SHEETS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -19,15 +19,15 @@
 
 </head>
 
-<!-- This is where all the body content begins -->
+<!-- Nav Desktop -->
 <body>
-	<header>
-		<nav class="nav-container" class="hidden-mobile">
+	<header class="margin-default">
+		<nav class="nav-container flex-row-center hidden-mobile">
 			<div class="nav-flex">
             <div>
             	<OSYS>OSYS</OSYS>
             </div>
-            <div id=nav-content>
+            <div id="nav-content">
             <ul>
                 <li class="nav-content"><a href="#">Get Help</a></li>
                 <li class="nav-content"><a href="#">About</a></li>
@@ -37,10 +37,29 @@
             </div>
             </div>
         </nav>
+    </header>
+<!-- Nav Mobile -->
+	<header class="margin-default">
+	<nav class="nav-container flex-row-center hidden-desktop">
+			<div class="nav-flex">
+            <div>
+            	<OSYS>OSYS</OSYS>
+            </div>
+				<div class="nav_hamburger"><!-- HAMBURGER -->
+               <svg width="48" height="23" viewBox="0 0 48 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="2" transform="translate(0 0.634029)" fill="black"/>
+                <rect width="48" height="2" transform="translate(0 10.634)" fill="black"/>
+                <rect width="48" height="2" transform="translate(0 20.634)" fill="black"/>
+                </svg>
+                </svg>
+            </div>
+            </div>
+            </div>
+        </nav>
 	</header>
 
-	<!-- Desktop donate Hero Section -->
-<section class="donate-hero-container">
+<!-- Desktop donate Hero Section -->
+<section class="donate-hero-container hidden-mobile">
 	<div class="donate-hero-flex">
 		<h1> Donate </h1>
 		<h4 class="white-text text-center"> Every time you donate, you make a direct positive impact on <br> Edmonton's most vulnerable youth. We are beholden to the <br> community that helps us empower young people to take the first step <br> toward stability. </h4>
@@ -48,7 +67,24 @@
 	</div>
 </section>
 
-<section class="items-container">
+<!-- mobile donate Hero Section -->
+<section class="donate-hero-container-mobile hidden-desktop">
+	<div class="donate-hero-flex-mobile">
+		<h1-mobile> Donate </h1-mobile>
+		<p class="white-text text-center"> Every time you donate, you make a direct positive impact on Edmonton's most vulnerable youth. We are beholden to the community that helps us empower young people to take the first step toward stability. </p>
+		<button class="btn-orange-long"><a>Donate Funds</a></button>
+	</div>
+</section>
+
+<section class="hidden-desktop">
+	<div class="img-crop">
+		<img src="images/cans.jpg" class="hero-img-mobile">
+	</div>
+</section>
+
+
+<!-- desktop donate essential items -->
+<section class="items-container hidden-mobile">
 	<div class="items-flex">
 			<div>
 				<img src="images/cans.jpg">
@@ -64,7 +100,22 @@
 		</div>
 	</div>
 </section>
-<section class="items-container">
+
+
+<!-- Mobile donate essential items -->
+<section class="items-container-mobile hidden-desktop">
+	<div class="items-flex-mobile">
+				<h2-mobile> Donate Essential Items </h2-mobile>
+				<p> We are always accepting in-kind donations! Please call us at 780-496-5947, or message us on Facebook or Instagram for questions regarding donations, seasonal asks, or drop-off times!
+				<br>
+				<br>
+				We cannot accept food that has been opened, or prepared outside a non-commercial facility, perishables, ripped or unwashed clothing, open makeup, used socks and underwear, or large home goods. </p>
+				<button class="btn-blackborder"><a> Donate Items </a></button>
+	</div>
+</section>
+
+<!-- Desktop Donate a Gift!-->
+<section class="items-container hidden-mobile">
 		<div class="items-flex">
 			<div>
 				<img src="images/xmas.jpg">
@@ -81,7 +132,32 @@
 	</div>
 </section>
 
-<section class="fundraiser-container">
+
+<!-- Mobile Donate a Gift!-->
+
+<section class="hidden-desktop">
+	<div class="img-crop">
+		<img src="images/xmas.jpg" class="hero-img-mobile">
+	</div>
+</section>
+
+<section class="items-container-mobile hidden-desktop">
+		<div class="items-flex-mobile">
+				<h2> Donate a Gift! </h2>
+				<p> In celebration of the season, we would like to provide the youth with a special holiday present, but WE NEED YOUR HELP to spread the good cheer!
+				<br>
+				<br>
+				When you click the link below and buy an item from the youth's Wishlist, it gets sent directly to us!</p>
+				<button class="btn-blackborder-long"><a> Send a youth a present! </a></button>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Desktop fundraiser -->
+
+<section class="fundraiser-container hidden-mobile">
 	<div class="fundraiser-flex">
 		<div class="fundraiser-content">
 			<h2 class="white-text"> Fundraising Campaigns </h2>
@@ -97,6 +173,24 @@
 	</div>
 </section>
 
+
+<!-- Mobile fundraiser -->
+
+<section class="fundraiser-container-mobile hidden-desktop">
+	<div>
+		<div class="img-padding-bottom">
+			<img src="images/doors-mobile.jpg">
+		</div>
+		<div class="fundraiser-content-mobile">
+			<h2-mobile class="white-text"> Fundraising Campaigns </h2-mobile>
+			<p class="white-text"> Door-to-Door Coupon book sales
+			<br>
+			<br>
+			The Old Strathcona Youth Society has a marketing company doing door-to-door coupon book sales in the Edmonton, St. Albert, Sherwood Park, Spruce Grove, Leduc, Fort Saskatchewan and Stony Plain area. These are a fundraiser for the OSYS, and all funds raised from the purchases go towards staffing, recreation, and daily operating costs of the OSYS.</p>
+			<button class="btn-transparent-long"><a> See more fundraisers </a></button>
+		</div>
+	</div>
+</section>
 
 <!-- Footer -->
 

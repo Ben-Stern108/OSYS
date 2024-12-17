@@ -19,10 +19,10 @@
 
 </head>
 
-<!-- This is where all the body content begins -->
+<!-- Nav Desktop -->
 <body>
-	<header>
-		<nav class="nav-container" class="hidden-mobile">
+	<header class="margin-default">
+		<nav class="nav-container flex-row-center hidden-mobile">
 			<div class="nav-flex">
             <div>
             	<OSYS>OSYS</OSYS>
@@ -37,49 +37,111 @@
             </div>
             </div>
         </nav>
+<!-- Nav Mobile -->
+	<nav class="nav-container flex-row-center hidden-desktop">
+			<div class="nav-flex">
+            <div>
+            	<OSYS>OSYS</OSYS>
+            </div>
+				<div class="nav_hamburger"><!-- HAMBURGER -->
+               <svg width="48" height="23" viewBox="0 0 48 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="2" transform="translate(0 0.634029)" fill="black"/>
+                <rect width="48" height="2" transform="translate(0 10.634)" fill="black"/>
+                <rect width="48" height="2" transform="translate(0 20.634)" fill="black"/>
+                </svg>
+                </svg>
+            </div>
+            </div>
+            </div>
+        </nav>
 	</header>
 
 <!-- Desktop Hero Section -->
-	<section class="hero" >
-		<div>
-			<div class="hero-flex">
-			<div class="hero-text">
-			<h1>Old Strathcona Youth Society</h1>
-			<h4 class="white-text">Providing street-level information, resources, referrals, and support to youth in the Whyte Ave area since 1998.</h4>
-			<button class="btn-orange-long"><a>See our Services</a></button>
+	<section class="hidden-mobile">
+		<div class="hero">
+			<div>
+				<div class="hero-flex">
+					<div class="hero-text">
+						<h1>Old Strathcona Youth Society</h1>
+						<h4 class="white-text">Providing street-level information, resources, referrals, and support to youth in the Whyte Ave area since 1998.</h4>
+						<button class="btn-orange-long"><a>See our Services</a></button>
+					</div>
+					<div class="hero-image"> 
+						<img src="images/homehero.jpg">
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="hero-image"> 
-			<img src="images/homehero.jpg">
-		</div>
-	</div>
-</div>
 	</section>
 
+<!-- Mobile Hero Section -->
+	<section class="hidden-desktop">
+		<div class="hero-mobile">
+				<div>
+					<h1-mobile>Old Strathcona <br> Youth Society</h1-mobile>
+					<h4 class="white-text">Providing street-level information, resources, referrals, and support to youth in the Whyte Ave area since 1998.</h4>
+					<button class="btn-orange-long"><a>See our Services</a></button>
+				</div>
+		</div>
+	</section>
+
+	<section class="hidden-desktop">
+		<div class="img-crop"> 
+			<img src="images/homehero.jpg" class="hero-img-mobile">
+		</div>
+	</section>
+
+
 <!-- Desktop Hours of Operation -->
-	<section class="hours-container">
+	<section class="hours-container hidden-mobile">
 		<div class="hours-flex">
 		<div>
 			<img src="images/hours.jpg">
 		</div>
 			<div class="hours-text">
 			<div class="office-hours">
-				<h2>Hours of operation</h2>
-				<h4>Office Hours <br> Mon – Fri:  10:30 am- 6:00</h4> 
-				<h4> Community Outreach Hours <br> Wed, Fri & Sat: 12:00 pm - 5:00 pm </h4>
-				<h4>Closed on Sunday</h4>
+				<h2>Hours of Operation</h2>
+				<h4>Office Hours <br><strong>Mon – Fri:  10:30 am- 6:00 pm </strong></h4> 
+				<h4> Community Outreach Hours <br><strong> Wed, Fri & Sat: 12:00 pm - 5:00 pm </strong></h4>
+				<h4><strong>Closed on Sunday</strong></h4>
 			</div>
 			<div class="office-hours">
 				<h2>Appointments</h2>
-				<h4>Appointments are available from <br> Tues – Thurs: 10:30 am-6:00 pm </h4> 
+				<h4>Appointments are available from <br> <strong>Tues – Thurs: 10:30 am-6:00 pm </strong> </h4> 
 				<h4>Please call the number below to make an appointment for housing, ID replacement, groceries, or bus passes!</h4>
-				<h4> Call us at: 780-496-5947</h4>
+				<h4> Call us at: <strong>780-496-5947</strong></h4>
 			</div>
 			</div>
 			</div>
 	</section>
 
-<!-- New Location -->
-	<section class="location-container">
+<!-- Mobile Hours of Operation -->
+	<section class="hours-container-mobile hidden-desktop">
+		<div class="hours-flex">
+			<div class="hours-text">
+			<div class="office-hours">
+				<h2-mobile>Hours of Operation</h2-mobile>
+				<h4>Office Hours <br><strong>Mon – Fri:  10:30 am- 6:00 pm </strong></h4> 
+				<h4> Community Outreach Hours <br><strong> Wed, Fri & Sat: 12:00 pm - 5:00 pm </strong></h4>
+				<h4><strong>Closed on Sunday</strong></h4>
+			</div>
+			<div class="office-hours">
+				<h2-mobile>Appointments</h2-mobile>
+				<h4>Appointments are available from <br> <strong>Tues – Thurs: 10:30 am-6:00 pm </strong> </h4> 
+				<h4>Please call the number below to make an appointment for housing, ID replacement, groceries, or bus passes!</h4>
+				<h4> Call us at: <strong>780-496-5947</strong></h4>
+			</div>
+			</div>
+			</div>
+	</section>
+	<section class="hidden-desktop">
+		<div class="img-crop-longer">
+			<img src="images/hours.jpg" class="hero-img-mobile">
+		</div>
+	</section>
+
+<!-- Desktop New Location -->
+	<section class="location-container hidden-mobile">
 		<div>
 			<img src="images/hammer.jpg">
 		</div>
@@ -95,8 +157,25 @@
 	</div>
 	</section>
 
-<!-- Upcoming Events -->
-	<section class="event-container">
+<!-- Mobile New Location -->
+	<section class="location-container-mobile hidden-desktop">
+		<div class="location-flex-mobile">
+			<div class="img-crop">
+				<img src="images/hammer.jpg">
+			</div>
+			<div>
+				<h2-mobile class="white-text">New Location</h2-mobile>
+				<div>
+					<h4 class="white-text">OSYS has a new home. More details and grand opening date coming soon.</h4>
+					<h4 class="white-text">To show support and make a donation, please click button below.</h4>
+				</div>
+			</div>
+				<button class="btn-transparent">Donate</button>
+	</div>
+	</section>
+
+<!-- Desktop Upcoming Events -->
+	<section class="event-container hidden-mobile">
 		<div>
 			<h2> Upcoming Events </h2>
 		</div>
@@ -128,8 +207,47 @@
 		</div>
 	</section>
 
-<!-- Get Involved -->
-<section class="get-container">
+<!-- Mobile Upcoming Events -->
+	<section class="event-container-mobile hidden-desktop">
+		<div>
+			<h2-mobile> Upcoming Events </h2-mobile>
+		</div>
+			<div class="event-flex-mobile ">
+				<div class="event-box-mobile">
+					<img src="images/berry.jpg">
+				<div>
+					<h3> Berry Picking </h3>
+					<body-small> April 15, 2024 <br> Information about the event </body-small>
+				</div>
+				</div>
+				<div class="event-box-mobile">
+				<div>
+					<img src="images/jurassic.jpg">
+				</div>
+				<div>
+					<h3> Jurassic Forest </h3>
+					<body-small> April 15, 2024 <br> Information about the event </body-small>
+				</div>
+				</div>
+
+			<div class="event-box-mobile">
+			<div>
+				<img src="images/pie.jpg">
+			</div>
+			<div>
+				<h3> Easy as Pie Fundraiser </h3>
+				<body-small> April 15, 2024 <br> Information about the event </body-small>
+			</div>
+
+			</div>
+			<div class="btn-see-more-mobile">
+				<h3 class="white-text underline"> See More Events </h3>
+			</div>
+		</div>
+	</section>
+
+<!-- Desktop Get Involved -->
+<section class="get-container hidden-mobile">
 	<div class="get-flex">
 		<h2 class="text-center"> Get Involved </h2>
 		<h4 class="text-center"> OSYS is always looking for volunteers. Sign up now and help us run drop-in and recreational activities or develop and manage fundraisers and special events. </h4>
@@ -137,9 +255,18 @@
 		</div>
 </section>
 
-<!-- Footer -->
+<!-- Mobile Get Involved -->
+<section class="get-container-mobile hidden-desktop">
+	<div class="get-flex-mobile">
+		<h2-mobile class="text-center"> Get Involved </h2-mobile>
+		<h4 class="text-center"> OSYS is always looking for volunteers. Sign up now and help us run drop-in and recreational activities or develop and manage fundraisers and special events. </h4>
+	<button class="btn-transparent">Volunteer</button>
+		</div>
+</section>
 
-<section>
+<!-- Desktop Footer -->
+
+<section class="hidden-mobile">
 	<div class="footer-container">
 		<div class="footer-flex">
 			<div class="OSYS-footer">
@@ -166,6 +293,41 @@
 	<div> <land-acknowledgement> OSYS acknowledge that our agency is on Treaty Six Territory | Amiskwaciwâskahikan </land-acknowledgement> 
 </div>
 </div>
+</div>
+</section>
+
+<!-- Mobile Footer -->
+
+<section class="hidden-desktop">
+	<div class="footer-container-mobile">
+		<div class="logo-content-mobile">
+		<div>
+			
+		</div>
+			<div class="footer-flex-mobile">
+				<OSYS> OSYS </OSYS>
+				<div class="link-flex-mobile">
+					<footer-links-mobile> Get Help <br> <br> About </footer-links-mobile>
+					<footer-links-mobile> Get Involved  <br> <br> Donate</footer-links-mobile>
+				</div>
+				<div 
+					class="line-mobile"> 
+				</div>
+				<div>
+					<h4><strong>Office Hours</strong><br> Mon – Fri:  10:30 am- 6:00 <br><br><strong>Community Outreach Hours </strong><br> Wed, Fri & Sat: 12:00 pm - 5:00 pm<br><br><strong> Call us at: </strong>780-496-5947</h4>
+				</div>
+				<div class="icons-flex">
+					<img src="images/ig.svg">
+					<img src="images/youtube.svg">
+				</div>
+				<div 
+					class="line-mobile"> 
+				</div>
+				<div>
+					<land-acknowledgement-mobile> OSYS acknowledge that our agency is on Treaty Six Territory | Amiskwaciwâskahikan </land-acknowledgement-mobile>
+				</div>
+				
+	</div>
 </div>
 </section>
 </body>

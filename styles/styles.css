@@ -20,15 +20,9 @@ body {
 
 /* Margin & Padding */
 
-.img-hero-mobile {
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-}
-
-.img-100{
-
-}
+ .margin-default{
+    	margin:0 80px;
+    }
 
 
 /* Backgrounds */
@@ -43,9 +37,21 @@ body {
 }
 
 /* Image Options */
-.hero-mobile {
-	width: 393px;
-	height: 322px;
+
+.hero-img-mobile {
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+}
+
+.img-crop {
+	height: 300px;
+	overflow: hidden;
+}
+
+.img-crop-longer {
+	height: 600px;
+	overflow: hidden;
 }
 
 
@@ -139,7 +145,6 @@ h3 {
 	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 120%; /* 28.8px */
 	letter-spacing: -0.48px;
 }
 
@@ -337,6 +342,18 @@ footer-links {
 	background: #128EB7;
 }
 
+.btn-see-more-mobile {
+	display: flex;
+	height: 5px;
+	width: 321px;
+	padding: 159px 0px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	background: #128EB7;
+}
+
 .btn-round-orange {
 	display: flex;
 	padding: 17px 40px 17px 26px;
@@ -423,6 +440,15 @@ footer-links {
 	align-items: center;
 }
 
+.hero-mobile {
+	display: flex;
+	padding: 40px 20px 40px 20px;
+	justify-content: center;
+	align-items: center;
+	background: #128EB7;
+	height: ;
+}
+
 .hero-flex {
 	display: flex;
 	align-items: center;
@@ -433,6 +459,15 @@ footer-links {
 	display: flex;
 	width: 524px;
 	flex-direction: column;
+}
+
+.hero-text-mobile {
+	display: flex;
+	width: 346px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 39px;
+	flex-shrink: 0;
 }
 
 .hero-image{
@@ -450,6 +485,17 @@ footer-links {
 	align-items: center;
 	max-width: 100%;
 }
+
+.hours-container-mobile {
+	display: flex;
+	width: 393px;
+	padding: 44px 300px 44px 20px;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 72px;
+}
+
 .hours-flex {
 	display: flex;
 	align-items: flex-start;
@@ -475,8 +521,24 @@ footer-links {
 	height: 449px;
 }
 
+.location-container-mobile {
+	display: inline-flex;
+	padding: 37px 20px 64.693px 20px;
+	flex-direction: column;
+	align-items: center;
+	background: var(--Color, #128EB7);
+}
+
 .location-flex {
 	align-items: inline-flex;
+}
+
+.location-flex-mobile {
+	display: flex;
+	width: 343px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 43px;
 }
 
 .location-text {
@@ -485,6 +547,12 @@ footer-links {
 	align-items: flex-start;
 	padding-left: 134px;
 	padding-bottom: 117px;
+}
+
+.location-text-mobile {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 .button-flex {
@@ -497,10 +565,17 @@ footer-links {
 /* UPCOMING EVENTS */
 
 .event-container {
-	flex-shrink: 0;
-	padding: 179px 80px 181px 80px;
+	padding: 179px 160px 181px 80px;
 	justify-content: center;
 	align-items: center;
+}
+
+.event-container-mobile {
+	display: inline-flex;
+	padding: 37px 0px 41px 23px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 15px;
 }
 
 .event-flex {
@@ -508,11 +583,37 @@ footer-links {
 	gap: 20px;
 }
 
+.event-flex-mobile {
+	display: flex;
+	width: 487px;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	gap: 14px;
+}
+
 .event-box {
 	display: flex;
 	width: 323px;
 	flex-direction: column;
 	align-items: left;
+}
+
+.event-box-mobile {
+	display: flex;
+	width: 323px;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-bottom: 20px;
+}
+
+.event-text-mobile {
+	display: flex;
+	width: 323px;
+	flex-direction: column;
+	align-items: flex-start;
+
+
 }
 
 /* GET INVOLVED */
@@ -528,12 +629,28 @@ footer-links {
 
 }
 
+.get-container-mobile {
+	display: flex;
+	padding: 45px 24px 45px 25px;
+	justify-content: center;
+	align-items: center;
+	background: #128EB7;
+}
+
 .get-flex {
 	display: flex;
 	width: 661px;
 	flex-direction: column;
 	align-items: center;
 	gap: 30px;
+	flex-shrink: 0;
+}
+
+.get-flex-mobile{
+	display: flex;
+	width: 344px;
+	flex-direction: column;
+	align-items: center;
 	flex-shrink: 0;
 }
 
@@ -546,9 +663,10 @@ footer-links {
 /* footer */
 
 .line {
-	width: 1353px;
+	width: 1273px;
 	height: 1px;
 	background: #000;
+
 }
 
 .line-mobile {
@@ -1075,6 +1193,10 @@ background: #128EB7;
     .hidden-desktop {
         display: none !important;
     }
+
+    .margin-default{
+    	margin:0 80px;
+    }
 }
 
 /* DESKTOP */
@@ -1086,6 +1208,10 @@ background: #128EB7;
 
     .hidden-desktop {
         display: flex;
+    }
+
+     .margin-default{
+    	margin:0 80px;
     }
 }
 
